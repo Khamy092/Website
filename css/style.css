@@ -21,7 +21,9 @@
     border-top-right-radius:10px;
     border-bottom-left-radius: 60% 20%;
     border-bottom-right-radius: 60% 20%;
+
 }
+
 .mainHeader h1
 {
     color: var(--text-color);
@@ -54,13 +56,40 @@
     margin: 0 auto;
 }
 
-.mainContent hr
+.mainContent  hr
 {
     width: 15%;
-    border: 1px solid #1c1c1c;
     margin: 0 auto;
 }
 
+#Projects hr
+{
+    width: 15%;
+    margin: 0 auto;
+}
+#card1 img {
+    opacity: 0.9;
+}
+#card1
+{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-radius: 10px 10px 50px 50px;
+    color: #fafaff;
+    border-color: #fafaff;
+    width: 90%;
+    height: 100%;
+}
+
+#card1 span
+{
+    font-style: italic;
+    font-size: small;
+}
+#card1:hover
+{
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
 .mainContent p  
 {
     font-size: 1.2em;
