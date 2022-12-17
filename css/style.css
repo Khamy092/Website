@@ -31,7 +31,7 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center;
-    padding-top: 360px;
+    padding-top: 190px;
 }
 
 .mainHeader h3
@@ -68,17 +68,20 @@
     margin: 0 auto;
 }
 .card1 img {
-    opacity: 0.9;
+    opacity: 1;
 }
+
 .card1
 {
-    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 10px 10px 50px 50px;
-    color: #fafaff;
+    color: rgba(5,8,114,1) 0%,
     border-color: #fafaff;
     width: 90%;
     height: 100%;
+    opacity: 0.9;
+    transition: opacity 0.5s, transform 0.5s, color 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .card1 span
@@ -86,9 +89,18 @@
     font-style: italic;
     font-size: small;
 }
+.card1 span:hover
+{
+ color:#fafaff ;
+}
 .card1:hover
 {
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    opacity: 1;
+    transform: translateY(-10px);
+    color:#fafaff;
+    border-color: #fafaff;
 }
 .mainContent p  
 {
