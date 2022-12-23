@@ -127,6 +127,11 @@
     text-align: center;
 }
 
+#badge-row1 img {
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);      /* bouncing effect */
+}
+
 #badge-row1 img:hover {
     transform: scale(1.2);
     transition: all 0.3s ease-in-out;
@@ -138,6 +143,11 @@
     margin: 0 auto;
     text-align: center;
     margin-bottom: 100px;
+}
+
+#badge-row2 img {
+    transition: transform 500ms;
+    transition-timing-function: cubic-bezier(.75, -3, .25, 4);
 }
 
 #badge-row2 img:hover {
