@@ -16,12 +16,16 @@
   <!-- JS file for changing text in the heading-->
   <script src="js/changing-text.js"></script>
 
+  <!-- JS file for fade in effect-->
+  <script src="js/fade-in.js"></script>
+
   <title>Taqi Khaliqdad | Portfolio</title>
 
 </head>
-
+<div class="row w-100" style="margin: 0 auto;">
+  <h5 class="p-3 text-center bg-danger text-light">Building an awesome website! Pardon the mess as I put on the finishing touches.</h5>
+</div>
 <body>
-
   <div class="mainHeader bg-dark">
     <h1><code class="text-light">Hey, I am Taqi.</code></h1>
     <h3 class="typewrite bg-light w-25 text-center text-dark shadow-5-strong" data-period="2000"
@@ -34,7 +38,7 @@
   </div>
   <div class="container-fluid">
     <div class="row">
-      <div class="mainContent">
+      <div class="mainContent fade-in">
         <h1 class="text-center text-dark p-2" style="margin-top: 150px;"><code class="text-dark">About Me</code></h1>
         <hr>
         <p class="text-justify text-dark p-5 col-6" style="font-size: 1.5vw;">I am a passionate IT student with a deep
@@ -46,13 +50,13 @@
     </div>
   </div>
 
-  <div class="container-fluid Projects">
+  <div class="container-fluid Projects fade-in">
     <div class="row">
       <h1 class="text-center text-dark p-2" style="margin-top: 150px;"><code class="text-dark">Projects</code></h1>
       <hr style="margin-bottom: 50px;">
     </div>
     <!-- create a row with 4 columns-->
-    <div class="row p-5">
+    <div class="row p-5 fade-in">
       <div class="col">
         <div class="card card1">
           <img src="img/Salvatore.jpg" class="card-img-top" alt="...">
@@ -204,13 +208,13 @@
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container fade-in">
       <div class="row">
         <h1 class="text-center text-dark p-2" style="margin-top: 150px;"><code
             class="text-dark">Technologies I Work With</code></h1>
         <hr style="margin-bottom: 50px;">
       </div>
-      <div class="row" id="badge-row1">
+      <div class="row fade-in" id="badge-row1">
         <div class="col">
           <img class"img-fluid" src="https://img.icons8.com/color/96/000000/html-5--v1.png" /><br>
           <h4>HTML 5</h4>
@@ -232,7 +236,7 @@
           <h4>Dot Net Core</h4>
         </div>
       </div>
-      <div class="row" id="badge-row2">
+      <div class="row fade-in" id="badge-row2">
         <div class="col" id="CSharp">
           <img class"img-fluid" src="https://img.icons8.com/color/48/null/c-sharp-logo-2.png" width="90" /><br>
           <h4>C#</h4>
@@ -253,12 +257,12 @@
           <img class"img-fluid" src="img/VS.png" style="width: 100px;" /><br>
           <h4>Visual Studio</h4>
         </div>
-        <div class="row">
+        <div class="row fade-in">
           <h1 class="text-center text-dark p-2" style="margin-top: 150px;"><code
               class="text-dark">Work & Education</code></h1>
           <hr style="margin-bottom: 50px;">
         </div>
-        <ul id="timeline" class="timeline">
+        <ul id="timeline" class="timeline fade-in">
           <div class="arrowhead"></div>
           <li class=" ">
             <div class="timeline-panel">
@@ -306,12 +310,11 @@
         </ul>
 
       </div>
-      <div class="footer">
+      <div class="footer fade-in">
         <hr>
         <br>
         <code class="text-dark p-5 h5">© 2023 Taqi.au | Hosted by <a href="https://github.com" target="_blank">Github</a></code>
       </div>
 
 </body>
-
 </html>
