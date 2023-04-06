@@ -9,7 +9,7 @@
 
 .fade-in {
 	opacity: 0;
-	transition: opacity 0.4s ease-in-out;
+	transition: opacity 0.9s ease-in-out;
   }
 
 html, body {
@@ -28,6 +28,7 @@ html, body {
 	height: 50%;
 	border-bottom-left-radius: 40% 10%;
 	border-bottom-right-radius: 40% 10%;
+	background-size: cover;
 }
 
 @keyframes gradient {
@@ -48,6 +49,32 @@ html, body {
         border-bottom-left-radius: 40%;
         border-bottom-right-radius: 40%;
     }
+}
+
+.navbar {
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 1000;
+	text-align: center;
+	padding-left: 10px;
+	justify-content: right;
+	display: flex;
+	font-weight: 500;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+
+.navbar-scrolled {
+	background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(0, 106, 255, 0.8) 0%, rgba(111, 97, 255, 0.8) 97.5%);
+	transition: background-color 500ms linear;
+	
 }
 
 .mainHeader h1
