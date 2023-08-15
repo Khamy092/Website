@@ -1,10 +1,8 @@
 :root
 {
-    --primary-color: #1c1c1c;
-    --secondary-color: #daddd8;
-    --third-color: #ecebe4;
-    --text-color: #fafaff;
-    --text-color-secondary: #eef0f2;
+    --primary-color: #011627;
+    --secondary-color: #ff6b6b;
+    --text-color: #f1f2f3;
 }
 
 .fade-in {
@@ -12,130 +10,103 @@
 	transition: opacity 0.9s ease-in-out;
   }
 
-html, body {
+html {
+	background-image: url(../img/bg3.jpg);
+	height: 50%;
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+
+body {
 	height: 100%;
 	width: 100%;
+	margin: 0;
+	
 }
 
 .appear {
 	opacity: 1;
   }
 
-.mainHeader 
-{
-    background: linear-gradient(to right, #00c6ff, #0072ff);
-  	animation: gradient 10s ease infinite;
+.mainHeader {
+	background-image: url(../img/bg3.jpg);
 	height: 50%;
-	border-bottom-left-radius: 40% 10%;
-	border-bottom-right-radius: 40% 10%;
 	background-size: cover;
-}
+	background-position: top;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    color: var(--primary-color);
+	text-align: center;
+    padding: 100px 0;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+	min-height: 100vh; /* Ensure full viewport height */
+  }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
+  .mainHeader h3 {
+	font-size: 3.5vw;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-    .mainHeader {
-        height: 50%;
-        border-bottom-left-radius: 40%;
-        border-bottom-right-radius: 40%;
-    }
-}
 
 .navbar {
 	background-color: transparent;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	color: rgba(1, 22, 39, 0.8); /* Transparent background color #011627 with 50% opacity */
 	position: fixed;
 	width: 100%;
 	top: 0;
 	z-index: 1000;
-	text-align: center;
 	padding-left: 10px;
 	justify-content: right;
 	display: flex;
 	font-weight: 500;
 }
-.navbar-dark .navbar-nav .nav-link {
-	color: white;
-}
-.navbar-dark .navbar-nav .nav-link:hover {
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
 
 
 .navbar-scrolled {
-	background-image: radial-gradient(circle 610px at 5.2% 51.6%, rgba(0, 106, 255, 0.8) 0%, rgba(111, 97, 255, 0.8) 97.5%);
-	transition: background-color 500ms linear;
-	
+    background-color: rgba(1, 22, 39, 0.8); /* Transparent background color #011627 with 50% opacity */
+    color: white; /* Text color */
+    transition: background-color 500ms linear;
 }
 
-.mainHeader h1
-{
-    color: var(--text-color);
-    font-size: 5em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-	padding-top: 150px;
-}	
-
-.mainHeader h3
-{
-    color: var(--text-color-secondary);
-    font-size: 2em;
-	max-width: fit-content;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    padding: 0px;
-    margin: 0 auto;
+.navbar-scrolled .nav-link:hover {
+	color: white; /* Text color */
 }
 
-@media screen and (max-width: 600px) {
-    .mainHeader h1 {
-        font-size: 0.7em;
-        padding-top: 35px;
-    }
-    
-    .mainHeader h3 {
-        font-size: 0.2em;
-    }
+.navbar-scrolled .nav-link {
+	color: white; /* Text color */
 }
 
-@media screen and (max-width: 2000px) {
-	.mainHeader 
-{
-    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgb(0, 106, 255) 0%, rgb(111, 97, 255) 97.5% );
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    width: 100%;
-    height: 60%;
-    padding: 0px;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    border-bottom-left-radius: 60% 20%;
-    border-bottom-right-radius: 60% 20%;
+.navbar-scrolled .navbar-brand {
+	color: white; /* Text color */
+}
 
+.navbar-scrolled .navbar-brand:hover {
+	color: white; /* Text color */
 }
-    .mainHeader h1 {
-        font-size: 5vw; /* sets font size to 7% of the viewport width */
-		padding-top: 70px;
-    }
-    
-    .mainHeader h3 {
-        font-size: 2vw; /* sets font size to 3.5% of the viewport width */
-    }
+
+
+.nav-link {
+	margin-right: 10px;
+	color: rgba(1, 22, 39, 0.8); /* Transparent background color #011627 with 50% opacity */
 }
+
+.nav-link:hover {
+	color: rgba(1, 22, 39, 0.8); /* Transparent background color #011627 with 50% opacity */
+	text-shadow: 0 0 10px var(--text-color);
+}
+
+.navbar-brand {
+	color: rgba(1, 22, 39, 0.8); /* Transparent background color #011627 with 50% opacity */
+}
+
+.navbar-brand:hover {
+	color: rgba(1, 22, 39, 0.8); /* Transparent background color #011627 with 50% opacity */
+}
+
 .mainContent h1 
 {
     color: var(--text-color);
@@ -160,19 +131,26 @@ html, body {
 }
 .card1 img {
     opacity: 1;
+	transition: opacity 0.5s, transform 0.5s, color 0.5s;
+	transition-timing-function: ease-in-out;
+	border-radius: 10px 10px 50px 50px;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
-.card1
-{
+.card1 {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 10px 10px 50px 50px;
-    color: rgba(5,8,114,1) 0%;
+    color: rgba(5, 8, 114, 1);
     border-color: #fafaff;
     width: 90%;
     height: 100%;
     opacity: 0.9;
     transition: opacity 0.5s, transform 0.5s, color 0.5s;
     transition-timing-function: ease-in-out;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
 }
 
 .card1 span
@@ -182,17 +160,20 @@ html, body {
 }
 .card1 span:hover
 {
- color:#fafaff ;
+ color: rgba(5, 8, 114, 1);
 }
-.card1:hover
-{
-    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+
+/* Hover effect */
+.card1:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    opacity: 1;
-    transform: translateY(-10px);
-    color:#fafaff;
-    border-color: #fafaff;
+    opacity: 1; /* Increase opacity on hover */
+    transform: translateY(-10px); /* Move element up slightly on hover */
+    color: rgba(5, 8, 114, 1);
+	transition: opacity 0.5s, transform 0.5s, color 0.5s;
 }
+
+
 .mainContent p  
 {
     font-size: 1.2em;
@@ -203,14 +184,22 @@ html, body {
     margin: 0 auto;
     text-align: justify;
     margin-bottom: 100px;
+	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+	border-radius: 10px;
+    color: rgba(5,8,114,1) 0%;
+    border-color: #fafaff;
+    opacity: 0.9;
+    transition: opacity 0.5s, transform 0.5s, color 0.5s;
+    transition-timing-function: ease-in-out;
 }
 
 .mainContent p:hover
 {
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 5px 7px -3px rgb(0 0 0 / 0.1);
+	transform: translateY(-10px);
     border-radius: 10px;
     /* add a transition */  
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 #badge-row1 {
@@ -511,7 +500,7 @@ html, body {
 
 
 .timeline-panel {
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
 	box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 	transform: translateY(-10px);
 	color:#212529;
@@ -520,11 +509,11 @@ html, body {
 }
 
 .timeline-panel:hover{
-    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
-    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-    opacity: 1;
-    color:#fafaff;
-    border-color: #fafaff;
+    opacity: 0.9;
+    transition: opacity 0.5s, transform 0.5s, color 0.5s;
+    transition-timing-function: ease-in-out;
+    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    color:rgba(5, 8, 114, 1);
 }
 
 
